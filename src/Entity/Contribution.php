@@ -22,7 +22,7 @@ class Contribution
     private $amount;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Project")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Project", inversedBy="contributions")
      * @ORM\JoinColumn(nullable=false)
      */
     private $project;
